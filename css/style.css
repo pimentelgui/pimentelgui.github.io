@@ -545,3 +545,25 @@ a { color: inherit; }
         scroll-behavior: auto;
     }
 }
+
+/* ==================================================
+   Ajustes de movimento e rolagem em dispositivos móveis
+================================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+body {
+    overscroll-behavior-x: none;
+}
+
+/* Mantém o movimento horizontal dentro dos carrosséis */
+.carousel-viewport {
+    max-width: 100%;
+    touch-action: pan-x pan-y pinch-zoom;
+    overscroll-behavior-x: contain;
+}
