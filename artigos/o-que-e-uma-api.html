@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda o que é uma API, como funciona e como ela permite a comunicação entre diferentes partes de um software.">
+    <title>O que é uma API? | Guilherme Pimentel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/artigos.css">
+</head>
+<body class="article-page">
+
+<header class="site-header article-header">
+    <nav class="nav container">
+        <a href="../index.html" class="logo">GP<span>.</span></a>
+        <a href="../index.html#artigos" class="back-link">← Voltar aos artigos</a>
+    </nav>
+</header>
+
+<main class="article-main">
+    <div class="article-breadcrumb">
+        <a href="../index.html">Início</a> / Artigos / O que é uma API?
+    </div>
+
+    <span class="article-category-label">Fundamentos de programação</span>
+
+    <h1 class="article-title">O que é uma API?</h1>
+
+    <p class="article-intro">
+        Entenda o conceito de API, como ela funciona e de que maneira
+        permite que diferentes partes de um software se comuniquem.
+    </p>
+
+    <div class="article-divider"></div>
+
+    <article class="article-content">
+        <h2>1. Definição</h2>
+
+        <p>
+            API é a sigla para <em>Application Programming Interface</em>,
+            ou Interface de Programação de Aplicações.
+        </p>
+
+        <p>
+            É um conjunto de regras e funcionalidades que permite que
+            diferentes partes de um software se comuniquem e utilizem
+            recursos umas das outras.
+        </p>
+
+        <p>
+            Em vez de precisar conhecer todos os detalhes internos de
+            uma aplicação, um programador pode utilizar as
+            funcionalidades disponibilizadas por sua API.
+        </p>
+
+        <h2>2. Como funciona?</h2>
+
+        <p>
+            Uma API funciona como uma interface entre quem solicita
+            uma operação e quem executa essa operação.
+        </p>
+
+        <ol>
+            <li>Um programa solicita uma determinada funcionalidade.</li>
+            <li>A API recebe essa solicitação.</li>
+            <li>A aplicação executa a operação correspondente.</li>
+            <li>O resultado é disponibilizado para quem fez a solicitação.</li>
+        </ol>
+
+        <h2>3. Exemplo na programação</h2>
+
+        <p>
+            Imagine uma aplicação que disponibiliza uma função
+            chamada <code>somar</code>:
+        </p>
+
+        <pre><code>local resultado = somar(10, 20)
+
+showMessage(resultado)</code></pre>
+
+        <p>
+            Nesse exemplo, o script utiliza uma funcionalidade
+            disponibilizada pela aplicação sem precisar conhecer
+            sua implementação interna.
+        </p>
+
+        <h2>4. Relação entre Lua e C++</h2>
+
+        <p>
+            Uma aplicação pode disponibilizar funções implementadas
+            em C++ para que sejam utilizadas por scripts escritos em Lua.
+        </p>
+
+        <ul>
+            <li><strong>C++:</strong> pode conter a implementação das funcionalidades.</li>
+            <li><strong>API:</strong> disponibiliza essas funcionalidades para utilização.</li>
+            <li><strong>Lua:</strong> permite chamar as funções disponibilizadas pela aplicação.</li>
+        </ul>
+
+        <p>
+            Essa integração permite ampliar as possibilidades de um
+            software por meio de scripts.
+        </p>
+
+        <h2>5. O que aprendi</h2>
+
+        <p>
+            Uma API não é necessariamente um programa independente.
+            Ela pode ser uma interface disponibilizada por uma
+            aplicação para permitir que outras partes do sistema
+            utilizem suas funcionalidades.
+        </p>
+
+        <p>
+            Também compreendi que diferentes linguagens podem
+            trabalhar juntas, cada uma desempenhando um papel
+            dentro de uma aplicação.
+        </p>
+    </article>
+
+    <div class="article-bottom">
+        <a href="../index.html#artigos">← Voltar para artigos e anotações</a>
+    </div>
+</main>
+
+<footer class="site-footer article-footer">
+    <div class="footer-inner container">
+        <a href="../index.html" class="logo">GP<span>.</span></a>
+        <p>© 2026 Guilherme Pimentel. Todos os direitos reservados.</p>
+        <a href="../index.html" class="back-top">Portfólio</a>
+    </div>
+</footer>
+
+</body>
+</html>

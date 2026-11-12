@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça como Lua e C++ podem trabalhar juntas dentro de uma aplicação.">
+    <title>Integração entre Lua e C++ | Guilherme Pimentel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/artigos.css">
+</head>
+<body class="article-page">
+
+<header class="site-header article-header">
+    <nav class="nav container">
+        <a href="../index.html" class="logo">GP<span>.</span></a>
+        <a href="../index.html#artigos" class="back-link">← Voltar aos artigos</a>
+    </nav>
+</header>
+
+<main class="article-main">
+    <div class="article-breadcrumb">
+        <a href="../index.html">Início</a> / Artigos / Integração entre Lua e C++
+    </div>
+
+    <span class="article-category-label">Lua e C++</span>
+
+    <h1 class="article-title">Integração entre Lua e C++</h1>
+
+    <p class="article-intro">
+        Como duas linguagens com características diferentes podem
+        trabalhar juntas dentro de uma mesma aplicação.
+    </p>
+
+    <div class="article-divider"></div>
+
+    <article class="article-content">
+        <h2>1. O que significa integrar linguagens?</h2>
+
+        <p>
+            A integração entre linguagens permite que tecnologias
+            diferentes trabalhem juntas dentro de uma mesma aplicação.
+        </p>
+
+        <p>
+            Uma aplicação pode utilizar C++ para implementar
+            funcionalidades e Lua para permitir que essas
+            funcionalidades sejam utilizadas por meio de scripts.
+        </p>
+
+        <h2>2. Qual é o papel de cada linguagem?</h2>
+
+        <h3>C++</h3>
+
+        <p>
+            C++ pode ser utilizado para desenvolver a estrutura
+            principal do software, implementar funcionalidades e
+            controlar operações que fazem parte da aplicação.
+        </p>
+
+        <h3>Lua</h3>
+
+        <p>
+            Lua é uma linguagem de script leve, que pode ser
+            incorporada a outras aplicações.
+        </p>
+
+        <p>
+            Ela permite criar scripts que utilizam funcionalidades
+            disponibilizadas pelo próprio software.
+        </p>
+
+        <h2>3. Como as linguagens se comunicam?</h2>
+
+        <p>
+            Em uma aplicação que integra Lua e C++, o funcionamento
+            pode seguir este fluxo:
+        </p>
+
+        <ol>
+            <li>Uma funcionalidade é implementada em C++.</li>
+            <li>A aplicação registra ou disponibiliza essa funcionalidade para Lua.</li>
+            <li>Um script Lua chama a função utilizando os parâmetros esperados.</li>
+            <li>A aplicação executa a implementação correspondente.</li>
+            <li>O resultado pode ser retornado ao script.</li>
+        </ol>
+
+        <h2>4. Exemplo prático no contexto do NewGC</h2>
+
+        <p>
+            Durante o estudo da API Lua do NewGC, foi possível observar
+            que funções utilizadas nos scripts são disponibilizadas
+            pela aplicação.
+        </p>
+
+        <p>
+            A análise do arquivo <code>CLuaApi.cpp</code> permite
+            investigar como determinadas funções são registradas
+            e relacionadas à implementação do software.
+        </p>
+
+        <p>
+            Isso ajuda a compreender a relação entre o código interno
+            da aplicação e as funcionalidades disponíveis para quem
+            escreve scripts Lua.
+        </p>
+
+        <h2>5. O que aprendi</h2>
+
+        <ul>
+            <li>Uma aplicação pode combinar diferentes linguagens de programação.</li>
+            <li>Lua pode ser incorporada a softwares desenvolvidos em C++.</li>
+            <li>Funções disponibilizadas pela aplicação podem ser utilizadas em scripts.</li>
+            <li>A leitura do código-fonte ajuda a entender como uma API funciona internamente.</li>
+            <li>A documentação e os testes ajudam a compreender o comportamento das funcionalidades disponíveis.</li>
+        </ul>
+    </article>
+
+    <div class="article-bottom">
+        <a href="../index.html#artigos">← Voltar para artigos e anotações</a>
+    </div>
+</main>
+
+<footer class="site-footer article-footer">
+    <div class="footer-inner container">
+        <a href="../index.html" class="logo">GP<span>.</span></a>
+        <p>© 2026 Guilherme Pimentel. Todos os direitos reservados.</p>
+        <a href="../index.html" class="back-top">Portfólio</a>
+    </div>
+</footer>
+
+</body>
+</html>

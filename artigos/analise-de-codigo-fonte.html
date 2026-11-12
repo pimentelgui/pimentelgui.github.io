@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda como analisar código-fonte para investigar implementações e compreender o funcionamento de um software.">
+    <title>Análise de Código-Fonte | Guilherme Pimentel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/artigos.css">
+</head>
+<body class="article-page">
+
+<header class="site-header article-header">
+    <nav class="nav container">
+        <a href="../index.html" class="logo">GP<span>.</span></a>
+        <a href="../index.html#artigos" class="back-link">← Voltar aos artigos</a>
+    </nav>
+</header>
+
+<main class="article-main">
+    <div class="article-breadcrumb">
+        <a href="../index.html">Início</a> / Artigos / Análise de Código-Fonte
+    </div>
+
+    <span class="article-category-label">C++ e análise técnica</span>
+
+    <h1 class="article-title">Análise de Código-Fonte</h1>
+
+    <p class="article-intro">
+        Entenda como estudar o código de um software para compreender
+        implementações, investigar comportamentos e identificar possíveis problemas.
+    </p>
+
+    <div class="article-divider"></div>
+
+    <article class="article-content">
+        <h2>1. O que é análise de código-fonte?</h2>
+
+        <p>
+            A análise de código-fonte consiste em estudar o código
+            de um software para compreender como suas funcionalidades
+            foram implementadas.
+        </p>
+
+        <p>
+            Essa prática permite identificar a lógica de funcionamento
+            de uma aplicação, entender suas operações e investigar
+            possíveis problemas.
+        </p>
+
+        <h2>2. O que observar durante uma análise?</h2>
+
+        <p>
+            Ao investigar uma função, alguns pontos importantes são:
+        </p>
+
+        <ul>
+            <li><strong>Nome:</strong> identifica a funcionalidade.</li>
+            <li><strong>Parâmetros:</strong> informações recebidas pela função.</li>
+            <li><strong>Tipos de dados:</strong> formatos dos valores utilizados.</li>
+            <li><strong>Implementação:</strong> operações realizadas internamente.</li>
+            <li><strong>Retorno:</strong> resultado produzido pela função.</li>
+            <li><strong>Tratamento de erros:</strong> como situações inesperadas são tratadas.</li>
+        </ul>
+
+        <h2>3. Aplicação prática</h2>
+
+        <p>
+            Durante o estudo da API Lua do NewGC, a análise do
+            código-fonte em C++ é utilizada para compreender como
+            determinadas funções são implementadas e disponibilizadas
+            para os scripts.
+        </p>
+
+        <p>
+            O arquivo <code>CLuaApi.cpp</code> é uma das referências
+            utilizadas nesse processo, especialmente para investigar
+            o registro das funções.
+        </p>
+
+        <h2>4. Comparação entre documentação e implementação</h2>
+
+        <p>
+            Uma documentação pode descrever como uma função deveria
+            funcionar, mas a análise do código permite verificar
+            como ela foi implementada.
+        </p>
+
+        <p>Comparar essas duas fontes ajuda a identificar:</p>
+
+        <ul>
+            <li>Diferenças entre comportamento documentado e comportamento implementado.</li>
+            <li>Tipos de dados esperados.</li>
+            <li>Condições que podem alterar o resultado.</li>
+            <li>Situações em que a função retorna valores diferentes ou não retorna um resultado válido.</li>
+        </ul>
+
+        <h2>5. O que aprendi</h2>
+
+        <ul>
+            <li>A importância de ler código existente antes de documentar uma funcionalidade.</li>
+            <li>Como identificar parâmetros e valores de retorno.</li>
+            <li>Como utilizar o código-fonte para esclarecer dúvidas.</li>
+            <li>Como comparar documentação e implementação.</li>
+            <li>Como a análise técnica contribui para testes mais completos.</li>
+        </ul>
+    </article>
+
+    <div class="article-bottom">
+        <a href="../index.html#artigos">← Voltar para artigos e anotações</a>
+    </div>
+</main>
+
+<footer class="site-footer article-footer">
+    <div class="footer-inner container">
+        <a href="../index.html" class="logo">GP<span>.</span></a>
+        <p>© 2026 Guilherme Pimentel. Todos os direitos reservados.</p>
+        <a href="../index.html" class="back-top">Portfólio</a>
+    </div>
+</footer>
+
+</body>
+</html>
