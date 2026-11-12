@@ -567,3 +567,17 @@ body {
     touch-action: pan-x pan-y pinch-zoom;
     overscroll-behavior-x: contain;
 }
+
+.button-whatsapp {
+    color: rgba(37, 211, 102, 0.75);
+    border: 1px solid rgba(37, 211, 102, 0.25);
+    background: rgba(37, 211, 102, 0.04);
+    transition: all 0.3s ease;
+}
+
+.button-whatsapp:hover {
+    color: #25D366;
+    border-color: rgba(37, 211, 102, 0.6);
+    background: rgba(37, 211, 102, 0.10);
+}
+
